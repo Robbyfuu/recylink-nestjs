@@ -29,8 +29,12 @@
 # Development
 
 1. Clonar el proyecto
-2. Copiar el ```env.template``` y renombar a ```.env```
-3. Ejecutar
+2. Crear un archivo .env en la raiz del proyecto con las siguientes variables
+      ```bash
+      JWT_SECRET = tupalabrasecreta (debes escribir una palabra o frase secreta)
+      ```
+```
+1. Ejecutar
 ## Installation
 
 ```bash
