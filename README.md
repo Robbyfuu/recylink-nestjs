@@ -26,10 +26,19 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+# Development
+
+1. Clonar el proyecto
+2. Copiar el ```env.template``` y renombar a ```.env```
+3. Ejecutar
 ## Installation
 
 ```bash
 $ yarn install
+```
+4. Levantar la imagen (Docker desktop)
+```
+docker-compose up -d
 ```
 
 ## Running the app
@@ -45,28 +54,10 @@ $ yarn run start:dev
 $ yarn run start:prod
 ```
 
-## Test
-
-```bash
-# unit tests
-$ yarn run test
-
-# e2e tests
-$ yarn run test:e2e
-
-# test coverage
-$ yarn run test:cov
+6. Visitar el sitio
 ```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+http://localhost:3000/graphql
+```
 
 ## License
 
