@@ -33,10 +33,9 @@
       ```bash
       JWT_SECRET = tupalabrasecreta (debes escribir una palabra o frase secreta)
       ```
-```
-1. Ejecutar
-## Installation
 
+## Installation
+3. Instalar las dependencias   
 ```bash
 $ yarn install
 ```
