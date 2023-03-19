@@ -20,6 +20,7 @@ export class ModelsCarsService {
 
   async findAll(): Promise<ModelsCar[]> {
     const modelsCars = await this.modelsCarModel.find().populate('brand');
+    if (!modelsCars) throw new Error('No hay modelos de autos!');
     return modelsCars;
   }
 

@@ -10,10 +10,10 @@ export class ModelsCar extends Document {
   _id: string;
   @Field(() => String)
   @Prop()
-  name: string;
+  nameModel: string;
   @Field(() => CarsBrand)
   @Prop({ type: Types.ObjectId, ref: CarsBrand.name, required: true })
-  brand?: CarsBrand | Types.ObjectId;
+  brand: CarsBrand | Types.ObjectId;
 }
 
 export const ModelsCarSchema = SchemaFactory.createForClass(ModelsCar);

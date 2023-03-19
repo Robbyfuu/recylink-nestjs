@@ -9,7 +9,7 @@ export class UpdateModelsCarInput extends PartialType(CreateModelsCarInput) {
   _id: string;
   @Field(() => String)
   @IsNotEmpty()
-  name: string;
-  @Field(() => String, { nullable: true })
-  brand?: string;
+  nameModel: string;
+  @Field(() => ID)
+  brand: string;
 }

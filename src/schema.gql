@@ -3,13 +3,13 @@
 # ------------------------------------------------------
 
 type CarsBrand {
-  _id: String!
+  _id: ID!
   name: String!
 }
 
 type ModelsCar {
   _id: ID!
-  name: String!
+  nameModel: String!
   brand: CarsBrand!
 }
 
@@ -28,9 +28,9 @@ type AuthResponse {
 
 type Query {
   carsBrands: [CarsBrand!]!
-  carsBrand(id: String!): CarsBrand!
+  carsBrand(id: ID!): CarsBrand!
   modelsCars: [ModelsCar!]!
-  modelsCar(id: String!): ModelsCar!
+  modelsCar(id: ID!): ModelsCar!
   users: [User!]!
   user(id: ID!): User!
   revalidate: AuthResponse!
@@ -54,17 +54,17 @@ input CreateCarsBrandInput {
 
 input UpdateCarsBrandInput {
   name: String!
-  _id: String!
+  _id: ID!
 }
 
 input CreateModelsCarInput {
-  name: String!
-  brand: String!
+  nameModel: String!
+  brand: ID!
 }
 
 input UpdateModelsCarInput {
-  name: String!
-  brand: String
+  nameModel: String!
+  brand: ID!
   _id: ID!
 }
 
